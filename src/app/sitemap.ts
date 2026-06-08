@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/data";
+import { getSiteUrl } from "@/lib/site";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://expressfoot.com";
+const BASE = getSiteUrl();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articleUrls = articles.map((a) => ({

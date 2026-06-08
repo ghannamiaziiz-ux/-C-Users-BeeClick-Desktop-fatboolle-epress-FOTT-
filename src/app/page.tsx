@@ -151,18 +151,18 @@ export default async function HomePage({
           })}
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-2 space-y-10">
+        <div className="grid gap-12 lg:grid-cols-3">
+          <div className="lg:col-span-2 space-y-12">
             <section>
-              <div className="mb-4 flex items-center justify-between">
-                <h2 className="font-display text-2xl font-bold">
+              <div className="mb-6 flex items-center justify-between">
+                <h2 className="font-display text-3xl font-bold">
                   Dernières actus
                 </h2>
                 <span className="text-sm text-pitch-muted">
                   {gridArticles.length} articles
                 </span>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2">
                 {gridArticles.map((a) => (
                   <ArticleCard key={a.id} article={a} />
                 ))}
@@ -170,15 +170,15 @@ export default async function HomePage({
             </section>
 
             <section>
-              <h2 className="mb-4 font-display text-2xl font-bold">
+              <h2 className="mb-6 font-display text-2xl font-bold">
                 Comptes rendus
               </h2>
-              <ul className="divide-y divide-pitch-border rounded-xl border border-pitch-border bg-pitch-card">
+              <ul className="divide-y divide-pitch-border rounded-2xl border border-pitch-border bg-pitch-card overflow-hidden">
                 {reports.map((a) => (
                   <li key={a.id}>
                     <Link
                       href={`/article/${a.slug}`}
-                      className="group flex flex-col gap-3 p-4 transition hover:bg-pitch sm:flex-row sm:items-center"
+                      className="group flex flex-col gap-4 p-5 transition hover:bg-pitch-card/80 hover:border-l-2 hover:border-l-pitch-accent sm:flex-row sm:items-center"
                     >
                       <div className="relative h-24 w-full shrink-0 overflow-hidden rounded-lg sm:h-20 sm:w-32">
                         <Image

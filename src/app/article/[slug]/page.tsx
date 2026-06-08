@@ -22,6 +22,7 @@ import {
   formatDate,
 } from "@/lib/data";
 import { fetchLiveScores } from "@/lib/football-api";
+import { getSiteUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -34,12 +35,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(slug);
   if (!article) return { title: "Article introuvable" };
 
+  const url = `${getSiteUrl()}/article/${slug}`;
+
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: { canonical: `/article/${slug}` },
     openGraph: {
       title: article.title,
       description: article.excerpt,
+      url,
       images: [{ url: article.image }],
       type: "article",
       publishedTime: article.publishedAt,
