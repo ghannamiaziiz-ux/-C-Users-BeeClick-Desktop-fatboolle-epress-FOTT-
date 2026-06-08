@@ -5,13 +5,13 @@ import type { Article } from "@/lib/types";
 import { formatRelative } from "@/lib/data";
 
 const categoryColors: Record<string, string> = {
-  UCL: "bg-gradient-to-r from-yellow-600 to-yellow-500 shadow-lg shadow-yellow-600/30",
-  PL: "bg-gradient-to-r from-amber-700 to-amber-600 shadow-lg shadow-amber-700/30",
-  "La Liga": "bg-gradient-to-r from-yellow-500 to-amber-400 shadow-lg shadow-yellow-500/30",
+  UCL: "bg-gradient-to-r from-pitch-gold to-pitch-accent shadow-lg shadow-pitch-accent/30",
+  PL: "bg-gradient-to-r from-pitch-gold to-pitch-accent shadow-lg shadow-pitch-accent/30",
+  "La Liga": "bg-gradient-to-r from-pitch-gold to-pitch-accent shadow-lg shadow-pitch-accent/30",
   "Ligue 1": "bg-gradient-to-r from-red-900 to-red-800 shadow-lg shadow-red-900/30",
-  "Serie A": "bg-gradient-to-r from-amber-800 to-amber-700 shadow-lg shadow-amber-800/30",
+  "Serie A": "bg-gradient-to-r from-pitch-gold to-pitch-accent shadow-lg shadow-pitch-accent/30",
   Bundesliga: "bg-gradient-to-r from-red-800 to-red-700 shadow-lg shadow-red-800/30",
-  Transferts: "bg-gradient-to-r from-yellow-500 to-amber-600 text-pitch shadow-lg shadow-yellow-500/30",
+  Transferts: "bg-gradient-to-r from-pitch-gold to-pitch-accent text-pitch shadow-lg shadow-pitch-accent/30",
 };
 
 export function ArticleCard({ article }: { article: Article }) {
