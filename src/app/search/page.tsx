@@ -1,0 +1,1 @@
+﻿import { SearchClient } from '@/components/SearchClient'; export const metadata = { title: 'Search | EXPRESS FOOT', description: 'Search for football news and articles' }; export default function SearchPage() { return <SearchClient />; }
