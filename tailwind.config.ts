@@ -10,12 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         pitch: {
-          DEFAULT: "#0a0f0d",
-          card: "#111916",
-          border: "#1e2e28",
-          accent: "#800000",
-          gold: "#D4AF37",
-          muted: "#6b8f7a",
+          DEFAULT: "#0f1419",
+          card: "#1a1f2e",
+          border: "#2a3a4a",
+          accent: "#FF8C00",
+          gold: "#FF8C00",
+          muted: "#7a8a9a",
         },
       },
       fontFamily: {

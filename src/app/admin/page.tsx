@@ -78,7 +78,7 @@ const allArticles = [
 
 const statusStyles: Record<ArticleStatus, string> = {
   published: "bg-emerald-500/20 text-emerald-400",
-  draft: "bg-pitch-gold/20 text-pitch-gold",
+  draft: "bg-pitch-accent/20 text-pitch-accent",
   scheduled: "bg-blue-500/20 text-blue-400",
 };
 
@@ -139,7 +139,7 @@ export default function AdminPage() {
               <item.icon className="h-5 w-5" stroke={1.5} />
               <span className="flex-1 text-left">{item.label}</span>
               {item.badge && (
-                <span className="rounded-full bg-pitch-gold/20 px-2 py-0.5 text-xs text-pitch-gold">
+                <span className="rounded-full bg-pitch-accent/20 px-2 py-0.5 text-xs text-pitch-accent">
                   {item.badge}
                 </span>
               )}
