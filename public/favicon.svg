@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#FF8C00" rx="8"/>
+  
+  <!-- Football/Soccer ball -->
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+  
+  <!-- Ball sections -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="1">
+    <!-- Pentagons and hexagons pattern -->
+    <polygon points="32,14 40,19 38,28 26,28 24,19"/>
+    <polygon points="24,28 26,19 40,19 44,28 38,36 26,36"/>
+    <polygon points="38,36 44,28 54,34 50,44 32,50 14,44 10,34 20,28"/>
+    <polygon points="14,44 10,34 16,24 26,28"/>
+    <polygon points="50,44 54,34 48,24 38,28"/>
+    
+    <!-- Center line -->
+    <line x1="32" y1="8" x2="32" y2="56" stroke="#FFFFFF" stroke-width="1.5"/>
+  </g>
+</svg>
