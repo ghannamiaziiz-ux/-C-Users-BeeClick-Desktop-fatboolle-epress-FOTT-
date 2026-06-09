@@ -1,0 +1,33 @@
+﻿backend:
+  name: github
+  repo: ghannamiaziiz-ux/-C-Users-BeeClick-Desktop-fatboolle-epress-FOTT-
+  branch: master
+  auth_endpoint: api/auth
+  base_url: https://frolicking-eclair-99c0191.netlify.app
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: articles
+    label: Articles
+    folder: content/articles
+    create: true
+    slug: "{{slug}}"
+    format: frontmatter
+    fields:
+      - { label: ID, name: id, widget: string }
+      - { label: Title (English), name: title, widget: string }
+      - { label: Title (Arabic), name: titleAr, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Category, name: category, widget: select, options: ["UCL", "PL", "La Liga", "Ligue 1", "Serie A", "Bundesliga", "Transferts"] }
+      - { label: Author, name: author, widget: string }
+      - { label: Excerpt (English), name: excerpt, widget: text }
+      - { label: Excerpt (Arabic), name: excerptAr, widget: text }
+      - { label: Image, name: image, widget: image }
+      - { label: Content (English), name: content, widget: markdown }
+      - { label: Content (Arabic), name: contentAr, widget: markdown }
+      - { label: Published At, name: publishedAt, widget: datetime }
+      - { label: Featured, name: featured, widget: boolean, required: false }
+      - { label: Status, name: status, widget: select, options: ["published", "draft", "scheduled"] }
+      - { label: Views, name: views, widget: number, default: 0 }
