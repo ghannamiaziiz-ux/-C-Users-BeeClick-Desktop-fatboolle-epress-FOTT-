@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { IconBall } from "@tabler/icons-react";
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <Link href="/" className="group flex items-center gap-2">
-      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-pitch-accent font-display text-lg font-bold text-pitch shadow-lg shadow-pitch-accent/20 transition group-hover:scale-105">
-        EF
-      </span>
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-pitch-accent to-orange-600 font-display text-lg font-bold text-pitch shadow-lg shadow-pitch-accent/30 transition group-hover:scale-110">
+        <IconBall className="h-6 w-6" stroke={2.5} />
+      </div>
       {!compact && (
         <div className="leading-tight">
           <span className="font-display text-xl font-bold tracking-tight text-white">
